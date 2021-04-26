@@ -9,11 +9,11 @@ module.exports = {
     await db.close();
 
     return jobs.map(job => ({
-        id: job.id,
-        name: job.name,
-        "daily-hours": job.daily_hours,
-        "total-hours": job.total_hours,
-        created_at: job.created_at
+      id: job.id,
+      name: job.name,
+      "daily-hours": job.daily_hours,
+      "total-hours": job.total_hours,
+      created_at: job.created_at
     }));
   },
 
